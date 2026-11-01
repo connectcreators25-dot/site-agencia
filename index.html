@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vertex Labs — Digital Systems & Craft</title>
+  <meta name="description" content="Vertex Labs. Construímos sistemas, sites e experiências digitais com precisão cirúrgica. Agência de alto desempenho." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Noise overlay -->
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="logo" data-magnetic>
+        <img src="assets/brand/vertex-mark-1200.png" alt="Vertex Labs" class="logo__mark" width="34" height="34" />
+        <span class="logo__text">Vertex<span>Labs</span></span>
+      </a>
+      
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#servicos" class="nav__link" data-magnetic>Serviços</a></li>
+          <li><a href="#abordagem" class="nav__link" data-magnetic>Abordagem</a></li>
+          <li><a href="#trabalhos" class="nav__link" data-magnetic>Trabalhos</a></li>
+          <li><a href="#contato" class="nav__link nav__link--cta" data-magnetic>Fale conosco</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav>
+      <a href="#servicos" class="mobile-menu__link">Serviços</a>
+      <a href="#abordagem" class="mobile-menu__link">Abordagem</a>
+      <a href="#trabalhos" class="mobile-menu__link">Trabalhos</a>
+      <a href="#contato" class="mobile-menu__link">Contato</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg">
+        <div class="hero__grid"></div>
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+      </div>
+
+      <div class="hero__content">
+        <div class="hero__label">
+          <span class="hero__label-line"></span>
+          <span>Agência de sistemas & experiências digitais</span>
+        </div>
+
+        <h1 class="hero__title">
+          <span class="line"><span class="line__inner">Construímos o</span></span>
+          <span class="line"><span class="line__inner">que os outros</span></span>
+          <span class="line"><span class="line__inner">apenas imaginam.</span></span>
+        </h1>
+
+        <p class="hero__subtitle">
+          Sistemas, sites e bio sites de alto impacto.  
+          Projetados com obsessão por detalhe, performance e resultado.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#contato" class="btn btn--primary" data-magnetic>
+            <span>Iniciar projeto</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#trabalhos" class="btn btn--ghost" data-magnetic>
+            <span>Ver trabalhos</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__bottom">
+        <div class="hero__scroll">
+          <span>Scroll</span>
+          <div class="hero__scroll-line"></div>
+        </div>
+        <div class="hero__meta">
+          <span>Baseados no Brasil</span>
+          <span class="dot"></span>
+          <span>Entrega global</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANIFESTO -->
+    <section class="manifesto" id="sobre">
+      <div class="container">
+        <div class="manifesto__grid">
+          <div class="manifesto__left">
+            <span class="section-label">01 — Manifesto</span>
+            <h2 class="manifesto__title">
+              Não fazemos sites.  
+              <em>Construímos ativos digitais.</em>
+            </h2>
+          </div>
+          <div class="manifesto__right">
+            <p>
+              A maioria das agências entrega templates com outra roupa. Nós tratamos cada projeto como uma peça de engenharia.
+            </p>
+            <p>
+              Cada pixel, cada interação e cada linha de código existe por uma razão.  
+              O resultado não é só bonito — é preciso, rápido e feito para converter.
+            </p>
+            <p class="manifesto__highlight">
+              Vertex Labs existe para quem está cansado do mediano.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="servicos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">02 — O que fazemos</span>
+          <h2 class="section-title">Três frentes.<br>Uma obsessão.</h2>
+        </div>
+
+        <div class="services__list">
+          <article class="service-card" data-index="01">
+            <div class="service-card__header">
+              <span class="service-card__number">01</span>
+              <h3 class="service-card__title">Sistemas</h3>
+            </div>
+            <p class="service-card__desc">
+              Plataformas sob medida, dashboards, CRMs, automações e produtos digitais. 
+              Arquitetura sólida, código limpo e experiência que escala.
+            </p>
+            <ul class="service-card__tags">
+              <li>Web Apps</li>
+              <li>Dashboards</li>
+              <li>Automações</li>
+              <li>APIs</li>
+            </ul>
+          </article>
+
+          <article class="service-card" data-index="02">
+            <div class="service-card__header">
+              <span class="service-card__number">02</span>
+              <h3 class="service-card__title">Sites</h3>
+            </div>
+            <p class="service-card__desc">
+              Presenças digitais de alto nível. Institucionais, landing pages e sites de conversão 
+              que não parecem feitos em fábrica de template.
+            </p>
+            <ul class="service-card__tags">
+              <li>Institucionais</li>
+              <li>Landing Pages</li>
+              <li>E-commerce leve</li>
+              <li>Performance</li>
+            </ul>
+          </article>
+
+          <article class="service-card" data-index="03">
+            <div class="service-card__header">
+              <span class="service-card__number">03</span>
+              <h3 class="service-card__title">Bio Sites</h3>
+            </div>
+            <p class="service-card__desc">
+              Link-in-bio que realmente impressiona. Mais do que uma lista de links — 
+              uma mini-experiência digital com identidade, velocidade e conversão.
+            </p>
+            <ul class="service-card__tags">
+              <li>Link in Bio</li>
+              <li>Personal Brand</li>
+              <li>Creators</li>
+              <li>Conversão</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section class="approach" id="abordagem">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">03 — Como trabalhamos</span>
+          <h2 class="section-title">Processo sem enrolação.</h2>
+        </div>
+
+        <div class="approach__steps">
+          <div class="step">
+            <div class="step__number">01</div>
+            <div class="step__content">
+              <h3>Imersão</h3>
+              <p>Entendemos o negócio, o público e o objetivo real. Sem briefing genérico.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__number">02</div>
+            <div class="step__content">
+              <h3>Direção</h3>
+              <p>Definimos arquitetura, visual e experiência antes de escrever a primeira linha.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__number">03</div>
+            <div class="step__content">
+              <h3>Construção</h3>
+              <p>Desenvolvimento com atenção maníaca a detalhe, performance e clareza.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__number">04</div>
+            <div class="step__content">
+              <h3>Entrega & Evolução</h3>
+              <p>Lançamos, medimos e iteramos. O projeto não termina no deploy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="work" id="trabalhos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">04 — Selecionados</span>
+          <h2 class="section-title">Trabalhos reais.<br>Resultados reais.</h2>
+          <p class="section-desc">Cada projeto abaixo está no ar. Clique e veja por conta própria.</p>
+        </div>
+
+        <div class="work__grid work__grid--portfolio">
+
+          <a href="https://biosite-01-essencial.vercel.app" target="_blank" rel="noopener" class="work-card" data-magnetic>
+            <div class="work-card__visual">
+              <img src="assets/projects/01-essencial.jpg" alt="Essencial" loading="lazy" />
+            </div>
+            <div class="work-card__info">
+              <span class="work-card__type">Bio Site</span>
+              <h3 class="work-card__name">Essencial</h3>
+              <p>Linha clean e direta. Identidade forte com o mínimo de ruído.</p>
+            </div>
+          </a>
+
+          <a href="https://biosite-02-autoridade.vercel.app" target="_blank" rel="noopener" class="work-card" data-magnetic>
+            <div class="work-card__visual">
+              <img src="assets/projects/02-autoridade.jpg" alt="Autoridade" loading="lazy" />
+            </div>
+            <div class="work-card__info">
+              <span class="work-card__type">Bio Site</span>
+              <h3 class="work-card__name">Autoridade</h3>
+              <p>Presença que transmite credibilidade e posicionamento de especialista.</p>
+            </div>
+          </a>
+
+          <a href="https://biosite-03-editorial.vercel.app" target="_blank" rel="noopener" class="work-card" data-magnetic>
+            <div class="work-card__visual">
+              <img src="assets/projects/03-editorial.jpg" alt="Editorial" loading="lazy" />
+            </div>
+            <div class="work-card__info">
+              <span class="work-card__type">Bio Site</span>
+              <h3 class="work-card__name">Editorial</h3>
+              <p>Estética de revista. Tipografia e hierarquia no centro da experiência.</p>
+            </div>
+          </a>
+
+          <a href="https://biosite-04-compacto.vercel.app" target="_blank" rel="noopener" class="work-card" data-magnetic>
+            <div class="work-card__visual">
+              <img src="assets/projects/04-compacto.jpg" alt="Compacto" loading="lazy" />
+            </div>
+            <div class="work-card__info">
+              <span class="work-card__type">Bio Site</span>
+              <h3 class="work-card__name">Compacto</h3>
+              <p>Tudo que precisa, nada que sobra. Rápido, objetivo e elegante.</p>
+            </div>
+          </a>
+
+          <a href="https://biosite-05-premium.vercel.app" target="_blank" rel="noopener" class="work-card" data-magnetic>
+            <div class="work-card__visual">
+              <img src="assets/projects/05-premium.jpg" alt="Premium" loading="lazy" />
+            </div>
+            <div class="work-card__info">
+              <span class="work-card__type">Bio Site</span>
+              <h3 class="work-card__name">Premium</h3>
+              <p>Acabamento de alto padrão. Detalhe, contraste e sofisticação.</p>
+            </div>
+          </a>
+
+          <a href="https://biosite-06-delivery.vercel.app" target="_blank" rel="noopener" class="work-card" data-magnetic>
+            <div class="work-card__visual">
+              <img src="assets/projects/06-delivery.jpg" alt="Delivery" loading="lazy" />
+            </div>
+            <div class="work-card__info">
+              <span class="work-card__type">Bio Site</span>
+              <h3 class="work-card__name">Delivery</h3>
+              <p>Focado em conversão rápida para pedidos e cardápio digital.</p>
+            </div>
+          </a>
+
+          <a href="https://biosite-07-hospedagem.vercel.app" target="_blank" rel="noopener" class="work-card" data-magnetic>
+            <div class="work-card__visual">
+              <img src="assets/projects/07-hospedagem.jpg" alt="Hospedagem" loading="lazy" />
+            </div>
+            <div class="work-card__info">
+              <span class="work-card__type">Bio Site</span>
+              <h3 class="work-card__name">Hospedagem</h3>
+              <p>Estrutura pensada para imóveis, reservas e contato direto.</p>
+            </div>
+          </a>
+
+          <a href="https://biosite-08-glam.vercel.app" target="_blank" rel="noopener" class="work-card" data-magnetic>
+            <div class="work-card__visual">
+              <img src="assets/projects/08-glam.jpg" alt="Glam" loading="lazy" />
+            </div>
+            <div class="work-card__info">
+              <span class="work-card__type">Bio Site</span>
+              <h3 class="work-card__name">Glam</h3>
+              <p>Visual marcante e impactante para marcas de beleza e lifestyle.</p>
+            </div>
+          </a>
+
+          <a href="https://biosite-09-delicado.vercel.app" target="_blank" rel="noopener" class="work-card" data-magnetic>
+            <div class="work-card__visual">
+              <img src="assets/projects/09-delicado.jpg" alt="Delicado" loading="lazy" />
+            </div>
+            <div class="work-card__info">
+              <span class="work-card__type">Bio Site</span>
+              <h3 class="work-card__name">Delicado</h3>
+              <p>Suavidade, leveza e refinamento visual em cada detalhe.</p>
+            </div>
+          </a>
+
+          <a href="https://biosite-10-barbearia.vercel.app" target="_blank" rel="noopener" class="work-card" data-magnetic>
+            <div class="work-card__visual">
+              <img src="assets/projects/10-barbearia.jpg" alt="Barbearia" loading="lazy" />
+            </div>
+            <div class="work-card__info">
+              <span class="work-card__type">Bio Site</span>
+              <h3 class="work-card__name">Barbearia</h3>
+              <p>Identidade masculina forte, com foco em estilo e agendamento.</p>
+            </div>
+          </a>
+
+          <a href="https://biosite-11-barbearia-agenda.vercel.app" target="_blank" rel="noopener" class="work-card" data-magnetic>
+            <div class="work-card__visual">
+              <div class="work-card__placeholder work-card__placeholder--agenda">
+                <span>Bio Site + Agenda</span>
+                <strong>Barbearia Agenda</strong>
+              </div>
+            </div>
+            <div class="work-card__info">
+              <span class="work-card__type">Bio Site + Agenda</span>
+              <h3 class="work-card__name">Barbearia com Agenda</h3>
+              <p>Versão completa com sistema de agendamento integrado.</p>
+            </div>
+          </a>
+
+          <a href="https://biosite-12-psicologia.vercel.app" target="_blank" rel="noopener" class="work-card" data-magnetic>
+            <div class="work-card__visual">
+              <img src="assets/projects/12-psicologia.jpg" alt="Psicologia" loading="lazy" />
+            </div>
+            <div class="work-card__info">
+              <span class="work-card__type">Bio Site</span>
+              <h3 class="work-card__name">Psicologia</h3>
+              <p>Tom acolhedor e profissional para profissionais da saúde mental.</p>
+            </div>
+          </a>
+
+          <a href="https://biosite-13-imobiliaria.vercel.app" target="_blank" rel="noopener" class="work-card" data-magnetic>
+            <div class="work-card__visual">
+              <img src="assets/projects/13-imobiliaria.jpg" alt="Imobiliária" loading="lazy" />
+            </div>
+            <div class="work-card__info">
+              <span class="work-card__type">Bio Site</span>
+              <h3 class="work-card__name">Imobiliária</h3>
+              <p>Estrutura clara para imóveis, contato e geração de leads.</p>
+            </div>
+          </a>
+
+          <a href="https://biosite-jailane-ferreira.vercel.app" target="_blank" rel="noopener" class="work-card" data-magnetic>
+            <div class="work-card__visual">
+              <img src="assets/projects/cliente-jailane-ferreira.jpg" alt="Jailane Ferreira" loading="lazy" />
+            </div>
+            <div class="work-card__info">
+              <span class="work-card__type">Cliente Real</span>
+              <h3 class="work-card__name">Jailane Ferreira</h3>
+              <p>Bio site personalizado com identidade própria da cliente.</p>
+            </div>
+          </a>
+
+          <a href="https://biosite-mantha-beauty-studio.vercel.app" target="_blank" rel="noopener" class="work-card" data-magnetic>
+            <div class="work-card__visual">
+              <img src="assets/projects/cliente-mantha-beauty-studio.jpg" alt="Mantha Beauty" loading="lazy" />
+            </div>
+            <div class="work-card__info">
+              <span class="work-card__type">Cliente Real</span>
+              <h3 class="work-card__name">Mantha Beauty Studio</h3>
+              <p>Studio de beleza com presença digital elegante e conversora.</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFFERENTIAL -->
+    <section class="differential">
+      <div class="container">
+        <div class="differential__content">
+          <span class="section-label">05 — Por que a Vertex</span>
+          <h2 class="differential__title">
+            A diferença não está no que fazemos.<br>
+            Está em <em>como</em> fazemos.
+          </h2>
+
+          <div class="differential__grid">
+            <div class="diff-item">
+              <h4>Zero template</h4>
+              <p>Cada projeto começa em branco. Nada de temas prontos disfarçados.</p>
+            </div>
+            <div class="diff-item">
+              <h4>Obsessão por detalhe</h4>
+              <p>Espaçamentos, microinterações, tipografia e performance tratados com o mesmo peso.</p>
+            </div>
+            <div class="diff-item">
+              <h4>Código de verdade</h4>
+              <p>Limpo, semântico, rápido e fácil de manter. Não entregamos gambiarra.</p>
+            </div>
+            <div class="diff-item">
+              <h4>Foco em resultado</h4>
+              <p>Beleza sem conversão é decoração. Nós projetamos para o negócio do cliente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA / CONTACT -->
+    <section class="contact" id="contato">
+      <div class="container">
+        <div class="contact__inner">
+          <div class="contact__left">
+            <span class="section-label">06 — Próximo passo</span>
+            <h2 class="contact__title">
+              Tem um projeto<br>
+              que precisa de<br>
+              <em>outro nível?</em>
+            </h2>
+            <p class="contact__text">
+              Conta pra gente o que você precisa.  
+              Respondemos com clareza, sem enrolação e com uma proposta real.
+            </p>
+          </div>
+
+          <div class="contact__right">
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required placeholder="Como podemos te chamar?" />
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required placeholder="seu@email.com" />
+              </div>
+              <div class="form-group">
+                <label for="type">Tipo de projeto</label>
+                <select id="type" name="type" required>
+                  <option value="" disabled selected>Selecione</option>
+                  <option value="sistema">Sistema / Web App</option>
+                  <option value="site">Site Institucional / Landing</option>
+                  <option value="bio">Bio Site / Link in Bio</option>
+                  <option value="outro">Outro / Não sei ainda</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Sobre o projeto</label>
+                <textarea id="message" name="message" rows="4" placeholder="Conte um pouco do que você precisa..."></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full" data-magnetic>
+                <span>Enviar mensagem</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="logo">
+            <img src="assets/brand/vertex-mark-1200.png" alt="Vertex Labs" class="logo__mark" width="34" height="34" />
+            <span class="logo__text">Vertex<span>Labs</span></span>
+          </a>
+          <p>Sistemas, sites e experiências digitais com precisão.</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4>Navegação</h4>
+            <a href="#servicos">Serviços</a>
+            <a href="#abordagem">Abordagem</a>
+            <a href="#trabalhos">Trabalhos</a>
+            <a href="#contato">Contato</a>
+          </div>
+          <div class="footer__col">
+            <h4>Contato</h4>
+            <a href="mailto:contato@vertexlabs.com.br">contato@vertexlabs.com.br</a>
+            <a href="#">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Vertex Labs. Todos os direitos reservados.</span>
+        <span class="footer__tag">Feito com obsessão.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
